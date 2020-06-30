@@ -1,0 +1,167 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    /* font-family: '', Poppins-Regular; */
+    font-size: 14px;
+    color: #222222;
+    overflow-x: hidden;
+    line-height: 20px;
+    min-height: 100%;
+    margin: 0;
+}  
+
+* {
+    box-sizing: border-box;
+}
+html,body{
+    margin:0;
+    width: 100%;
+    overflow-x: hidden;
+}  
+
+.testimg {
+    width: 70px;
+    border-radius: 50%;
+    margin-top: -32px;
+}
+
+.topimg {
+    transform: scaleX(-1);
+    width: 100%;
+}
+
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-item .nav-link {
+    
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(140, 140, 140);
+    transition: all 0.4s ease-in 0s;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: rgb(183, 5, 105);
+    text-decoration: overline;
+}
+.nav-link{
+    position:relative;
+}
+
+.navbar-toggler {
+    color: rgb(183, 5, 105);
+}
+
+.current-page{
+    color: rgb(183, 5, 105) !important;
+    transition: transform 0.4s ease-in-out 0s;
+    text-decoration: overline;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid #B70569;
+    color: #B70569 !important;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5%;
+    background: #ffffff;
+    transition: all 0.4s ease-in;
+    padding: 7px 17px;
+    outline: none !important;
+}
+
+
+.btn:hover {
+    box-shadow: 0px 8px 8px rgba(183, 5, 105, 0.22);
+}
+
+.btn-outline {
+    padding: 7px 17px;
+
+}
+
+
+.intro {
+    font-size: 52px;
+    line-height: 1.5;
+}
+
+
+.shecodeintro1 h2 {
+    font-weight: 800;
+    margin: 5%;
+
+}
+
+h4 {
+   color: #B70569;
+   font-size: 18px;
+}
+
+.headline {
+    font-weight: 800;
+    font-size: 25px;
+    color: #B70569;
+}
+
+.shecodevision {
+    box-shadow: 0 0 10px 0 rgba(183, 5, 105, 0.22);
+    padding: 50px 35px 0 35px;
+    border-radius: 5px;
+    margin-top: 1%;
+    text-align: center;
+    padding-bottom: 4rem;
+    color: #807c7c;
+}
+
+.shecodevision h4 {
+    line-height: 1.4;
+    color: #807c7c;
+    margin-top: 2%;
+    font-weight: 800;
+}
+
+.shecodetest {
+    box-shadow: 0 0 10px 0 rgba(183, 5, 105, 0.22);
+    padding: 40px;
+    border-radius: 5px;
+    margin-top: 27%;
+    height: 27rem;
+}
+
+.shecodeform {
+    padding: 80px 120px 30px;
+    border-radius: 5px;
+    margin-top: 20%;
+    border: 1px solid #B70569;
+}
+
+
+.shecodetest p, .shecodeintro1 p {
+    color: #807c7c;
+}
+
+.page-footer {
+    margin-top: 5%;
+    text-align: center;
+    background: rgb(119, 119, 119);
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    
+    
+}
+
+.footer-link {
+   
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.footer-copyright {
+    font-size: 14px;
+    height: 55px;
+    background: rgb(58, 58, 58);
+}
