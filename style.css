@@ -1,17 +1,19 @@
 body {
     font-family: 'Raleway', sans-serif;
-    /* font-family: '', Poppins-Regular; */
     font-size: 14px;
     color: #222222;
     overflow-x: hidden;
     line-height: 20px;
     min-height: 100%;
-    margin: 0;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
 }  
 
 * {
     box-sizing: border-box;
 }
+
 html,body{
     margin:0;
     width: 100%;
@@ -32,9 +34,8 @@ html,body{
 
 /* change the link color */
 .navbar-custom .navbar-nav .nav-item .nav-link {
-    
-    font-size: 18px;
-    font-weight: 600;
+    font-size: medium;
+    font-weight: 500;
     color: rgb(140, 140, 140);
     transition: all 0.4s ease-in 0s;
 }
@@ -49,7 +50,8 @@ html,body{
 }
 
 .navbar-toggler {
-    color: rgb(183, 5, 105);
+    
+    background-color: rgb(183, 5, 105);
 }
 
 .current-page{
@@ -58,40 +60,66 @@ html,body{
     text-decoration: overline;
 }
 
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 22px;
+    padding-left: 22px;
+    padding-top: 25px;
+}
+
+
 .btn {
-    display: inline-block;
     border: 1px solid #B70569;
     color: #B70569 !important;
     font-size: 18px;
     font-weight: 600;
-    margin-top: 5%;
     background: #ffffff;
     transition: all 0.4s ease-in;
     padding: 7px 17px;
     outline: none !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+.shecodebtn {
+    display: inline-block;
+    border: 1px solid #B70569;
+    border-radius: 5px;
+    color: #B70569 !important;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5%;
+    padding: 10px 0;
+    background: #ffffff;
+    transition: all 0.4s ease-in;
+    width: 20%;
+}
+
+
+.shecodebtn:hover {
+    box-shadow: 0px 8px 8px rgba(183, 5, 105, 0.22);
+}
 
 .btn:hover {
     box-shadow: 0px 8px 8px rgba(183, 5, 105, 0.22);
 }
 
-.btn-outline {
-    padding: 7px 17px;
-
+.head {
+    padding-top: 50px;
 }
 
 
 .intro {
-    font-size: 52px;
+    font-size: 50px;
     line-height: 1.5;
 }
 
 
 .shecodeintro1 h2 {
-    font-weight: 800;
     margin: 5%;
-
+    font-weight: 700;
+    
 }
 
 h4 {
@@ -105,12 +133,13 @@ h4 {
     color: #B70569;
 }
 
+
+
 .shecodevision {
     box-shadow: 0 0 10px 0 rgba(183, 5, 105, 0.22);
     padding: 50px 35px 0 35px;
     border-radius: 5px;
     margin-top: 1%;
-    text-align: center;
     padding-bottom: 4rem;
     color: #807c7c;
 }
@@ -127,41 +156,89 @@ h4 {
     padding: 40px;
     border-radius: 5px;
     margin-top: 27%;
-    height: 27rem;
 }
+
+@media screen and (max-width: 768px) {
+    .shecodeintro1 {
+        text-align: center;
+    }
+}
+
 
 .shecodeform {
     padding: 80px 120px 30px;
     border-radius: 5px;
-    margin-top: 20%;
+    margin-top: 10%;
     border: 1px solid #B70569;
+    width: 90%;
+}
+
+.shecodeformp {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    background: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 560px){
+    .shecodeform {
+         padding: 35px 7px 30px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .shecodebtn {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+    .shecodetest {
+        height: 30rem;
+    }
 }
 
 
-.shecodetest p, .shecodeintro1 p {
+@media screen and (max-width: 1199px) and (min-width: 992px){
+    .shecodetest {
+        height: 27rem;
+    }
+}
+
+.shecodeintro1 p {
     color: #807c7c;
+}
+
+.shecodetest p {
+    color: #807c7c;
+    line-height: 1.5;
+    font-size: 15px;
 }
 
 .page-footer {
     margin-top: 5%;
-    text-align: center;
     background: rgb(119, 119, 119);
     color: rgb(255, 255, 255);
+    padding: 30px 0;
 }
 
-.container {
-    
-    
+.footer-link:hover {
+    text-decoration: none;
+    color: rgb(238, 37, 151) !important;
 }
+
 
 .footer-link {
-   
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255) !important;
+    transition: all 0.4s ease-in 0s;
 }
 
 .footer-copyright {
     font-size: 14px;
     height: 55px;
     background: rgb(58, 58, 58);
+    color: rgb(255, 255, 255) !important;
 }
